@@ -42,3 +42,16 @@ header {
     color: #0099ff
 }
 
+button {
+    margin-left: 15px;
+    padding: 9px 20px;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    background-color: #0099ff75;
+}
