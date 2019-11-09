@@ -10,15 +10,35 @@ body {
 
 li, a, button {
     font-family: "Raleway";
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     color: #e9eef1;
     text-decoration: none;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 2px 10%;
+    background-color: black;
 }
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    color: white;
+}
+
+.navbar_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar_links li a {
+    transition: all 0.4s ease 0s;
+}
+
+.navbar_links li a:hover {
+    color: #0099ff
+}
+
