@@ -15,3 +15,10 @@ li, a, button {
     color: #e9eef1;
     text-decoration: none;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
