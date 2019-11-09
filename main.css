@@ -74,15 +74,9 @@ button:hover {
 
 #featuredArticle {
     display: grid;
-    grid-template: repeat(8, 200px) / repeat(8, 200px);
+    grid-template: repeat(5, 200px) / repeat(5, 200px);
     grid-gap: 5px;
     grid-template-areas: "articleName . picture . ." "articleBlurb . . . .";
-    /* grid-template-rows: 10%;
-    padding-left: 5%;
-    width: 500px;
-    height: 400px;
-    margin-left: 40px; */
-    /* background-color: tomato; */
 }
 
 #featuredArticle div{
@@ -126,4 +120,19 @@ button:hover {
 #featuredArticle :nth-child(3) {
     grid-area: articleBlurb;
     grid-column-end: 3;
+}
+
+/* Side Panel Stories Styling */
+
+.sidePanel {
+    display: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidePanel p {
+    display: flex;
+    color: black;
+    justify-content: flex-end;
+    text-align: center;
 }
