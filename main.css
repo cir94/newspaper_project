@@ -74,30 +74,30 @@ button:hover {
 
 /* Featured Article Div Styling */
 
-#featuredArticle {
+#frontPage {
     display: grid;
-    grid-template: repeat(5, 200px) / repeat(5, 200px);
+    grid-template: repeat(10, 200px) / repeat(10, 200px);
     grid-gap: 5px;
-    grid-template-areas: "articleName . picture . ." "articleBlurb . . . .";
+    grid-template-areas: "articleName . picture . . . . . . ." "articleBlurb . . . . . . sideArticle . ." ". . . . . . . . . .";
     /* margin-top: -11%; */
 }
 
-#featuredArticle div{
+#frontPage div{
     align-items: center;
     justify-content: center;
 }
 
-#featuredArticle h4 {
+#frontPage h4 {
     font-weight: 700;
     font-size: 24px;
     text-align: center;
 }
 
-#featuredArticle img {
+#frontPage img {
     padding-top: 10%;
 }
 
-#featuredArticle p {
+#frontPage p {
     display: flex;
     align-items: flex-end;
     text-align: left;
@@ -109,44 +109,47 @@ button:hover {
     margin-top: -20%;
 }
 
-#featuredArticle :nth-child(1) {
+#frontPage :nth-child(1) {
     grid-area: articleName;
     grid-column-end: 3;
 }
 
 
-#featuredArticle :nth-child(2) {
+#frontPage :nth-child(2) {
     grid-area: picture;
     grid-column-end: 3;
 }
 
-#featuredArticle :nth-child(3) {
+#frontPage :nth-child(3) {
     grid-area: articleBlurb;
     grid-column-end: 3;
 }
 
+#frontPage :nth-child(4) {
+    grid-area: sideArticle;
+    grid-column-start: 6;
+}
+
 /* Side Panel Stories Styling */
 
-.sidePanel {
+.frontPage {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 0%;
-    margin-left: 50vw;
-    margin-top: 2vw;
+    padding-bottom: 8vw;
 }
 
-.sidePanel p {
+.frontPage h2 {
     display: flex;
     color: black;
-    align-content: center;
+    font-size: 16px;
     text-align: center;
 }
 
-.sidePanel h3 {
+.frontPage h3 {
     font-weight: 700;
-    fone-size: 19px;
+    font-size: 19px;
 }
 
 hr.underArticle {
