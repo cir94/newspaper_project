@@ -4,6 +4,7 @@
 
 body {
     background-color: #e9e9e998;
+    position: absolute;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -78,7 +79,7 @@ button:hover {
     display: grid;
     grid-template: repeat(10, 200px) / repeat(10, 200px);
     grid-gap: 5px;
-    grid-template-areas: "articleName . picture . . . . . . ." "articleBlurb . . . . . . sideArticle . ." ". . . . . . . . . .";
+    grid-template-areas: "articleName . picture . . verticalBreak . . . ." "articleBlurb . . . . . . sideArticle . ." "hbotBreak . . . . . . . . ." ". . . . hbetweenArticles . . . . ."
     /* margin-top: -11%; */
 }
 
@@ -130,9 +131,24 @@ button:hover {
     grid-column-start: 6;
 }
 
+#frontPage :nth-child(5) {
+    grid-area: verticalBreak;
+    grid-column-start: 5;
+}
+
+#frontPage :nth-child(6) {
+    grid-area: hbotBreak;
+    grid-column-start: 1;
+}
+
+#frontPage :nth-child(7) {
+    grid-area: hbetweenArticles;
+    grid-column-start: 1;
+}
+
 /* Side Panel Stories Styling */
 
-.frontPage {
+ .frontPage {    /* General side panel styling */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -143,15 +159,47 @@ button:hover {
 .frontPage h2 {
     display: flex;
     color: black;
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
 }
 
 .frontPage h3 {
     font-weight: 700;
-    font-size: 19px;
+    font-size: 20px;
+    text-align: center;
 }
 
-hr.underArticle {
+/* Styling for various line separators for front page */
+
+.underArticle {
     border: 1px solid #9e9e9e79;
+}
+
+.verticalBreak {
+    border-left: 1px solid #9e9e9e79;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    height: 800px;
+}
+
+
+.hbotBreak {
+    border: 1px solid #9e9e9e79;
+    width: 63em;
+    padding-top: 5em;
+    border-top: none;
+    border-right: none;
+}
+
+.hbetweenArticles {
+    border-right: 1px double #9e9e9e79;
+    border-left: 1px solid #9e9e9e79;
+    border-top: none;
+    border-bottom: none;
+    width: 20em;
+    height: 20em;
+    margin-top: -7em;
+
+
 }
