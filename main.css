@@ -236,7 +236,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding-bottom: 10em;
-    margin-top: -5em;
+    margin-top: 1em;
     margin-right: 4em;
 }
 
@@ -252,7 +252,7 @@ button:hover {
 .underArticle2 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 10em;
+    padding-bottom: 6em;
     margin-left: 12em;
     text-align: center;
 }
